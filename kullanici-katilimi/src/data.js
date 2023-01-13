@@ -14,6 +14,7 @@ const Data = (props) => {
             type="text"
             value={formData.Name}
             onChange={handleChange}
+            data-cy="name"
           />
         </p>
         <p>
@@ -24,6 +25,7 @@ const Data = (props) => {
             type="email"
             value={formData.Email}
             onChange={handleChange}
+            data-cy="email"
           />
         </p>
 
@@ -35,6 +37,7 @@ const Data = (props) => {
             type="password"
             value={formData.Password}
             onChange={handleChange}
+            data-cy="password"
           />
         </p>
         <p>
@@ -44,11 +47,12 @@ const Data = (props) => {
             checked={formData.kosulKabul}
             type="checkbox"
             onChange={handleChange}
+            data-cy="condition"
           />
           <label htmlFor="kosul">Koşulları kabul ediyorum</label>
         </p>
         <p>
-          <button type="submit" disabled={!submitDisable}>
+          <button type="submit" disabled={!submitDisable} data-cy="button-test">
             Giriş Yap
           </button>
         </p>
